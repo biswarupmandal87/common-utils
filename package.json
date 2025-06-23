@@ -1,5 +1,5 @@
 {
-  "name": "common-utils",
+  "name": "nodejs-common-utils",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,5 @@
     "url": "https://github.com/biswarupmandal87/common-utils/issues"
   },
   "homepage": "https://github.com/biswarupmandal87/common-utils#readme",
-  "description": ""
+  "description": "A comprehensive utility library for NodeJS applications providing geolocation, currency conversion, and AWS S3 file management functions."
 }
