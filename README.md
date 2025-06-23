@@ -2,13 +2,12 @@
 
 A comprehensive utility library for NodeJS applications providing geolocation, currency conversion, and AWS S3 file management functions.
 
-[![npm version](https://img.shields.io/npm/v/common-utils.svg)](https://www.npmjs.com/package/common-utils)
-[![license](https://img.shields.io/npm/l/common-utils.svg)](https://github.com/biswarupmandal87/common-utils/blob/main/LICENSE)
+This library simplifies common tasks such as retrieving location information from IP addresses, converting prices between currencies, ensuring directory existence for file operations, and managing files in AWS S3.   It is designed to be easy to use and integrate into your NodeJS projects, making it a valuable tool for developers working with geolocation, currency data, and cloud storage.
 
 ## Installation
 
 ```bash
-npm install common-utils
+npm install nodejs-common-utils
 ```
 
 ## Features
@@ -27,7 +26,7 @@ npm install common-utils
 ### Geolocation and Currency Functions
 
 ```javascript
-const { getLocationInfo, getCurrencyByIP, getExchangeRate, convertPrice } = require('common-utils');
+const { getLocationInfo, getCurrencyByIP, getExchangeRate, convertPrice } = require('nodejs-common-utils');
 
 // Get location info for an IP address
 const locationInfo = await getLocationInfo('8.8.8.8');
@@ -45,7 +44,7 @@ const priceInEUR = convertPrice(100, 0.85); // 85.00
 ### File System Utilities
 
 ```javascript
-const { ensureDirectoryExistence } = require('common-utils');
+const { ensureDirectoryExistence } = require('nodejs-common-utils');
 
 // Make sure directory exists before writing a file
 const filePath = '/path/to/your/file.txt';
@@ -64,7 +63,7 @@ const {
   deleteS3Files,
   getS3ImageObject,
   getS3FileObject
-} = require('common-utils');
+} = require('nodejs-common-utils');
 
 // Configure AWS S3 client
 const s3Client = new AWS.S3({
